@@ -1,7 +1,6 @@
-import 'package:backend_api/entity/Task.dart';
-import 'package:backend_api/repository/TaskRepository.dart';
-
+import '../entity/Task.dart';
 import '../repository/RepositoryFacroty.dart';
+import '../repository/TaskRepository.dart';
 import '../utils/SequenceUtil.dart';
 
 class TaskService {

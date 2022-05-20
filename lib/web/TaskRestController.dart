@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:backend_api/entity/Task.dart';
-import 'package:backend_api/service/TaskService.dart';
 import 'package:http/http.dart' as http;
-import 'package:backend_api/service/ServiceFactory.dart';
+
+import '../entity/Task.dart';
+import '../service/ServiceFactory.dart';
+import '../service/TaskService.dart';
 
 class TaskRestController {
   final TaskService? _taskService = ServiceFactory.getTaskService;

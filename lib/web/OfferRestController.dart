@@ -1,9 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:backend_api/entity/Offer.dart';
 import 'package:http/http.dart' as http;
-import 'package:backend_api/service/ServiceFactory.dart';
-import 'package:backend_api/service/OfferService.dart';
+import '../entity/Offer.dart';
+import '../service/OfferService.dart';
 import '../service/ServiceFactory.dart';
 
 class OfferRestController {

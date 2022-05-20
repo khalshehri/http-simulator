@@ -1,6 +1,4 @@
-import 'package:backend_api/entity/BaseEntity.dart';
-import 'package:backend_api/entity/Complaint.dart';
-
+import '../entity/Complaint.dart';
 import 'BaseRepository.dart';
 
 class ComplaintRepository extends BaseRepository {

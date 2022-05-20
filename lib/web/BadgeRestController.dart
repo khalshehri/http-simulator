@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:backend_api/entity/Badge.dart';
-import 'package:backend_api/service/BadgeService.dart';
 import 'package:http/http.dart' as http;
-import 'package:backend_api/service/ServiceFactory.dart';
+
+import '../entity/Badge.dart';
+import '../service/BadgeService.dart';
+import '../service/ServiceFactory.dart';
 
 class BadgeRestController {
   final BadgeService? _badgeService = ServiceFactory.getBadgeService;

@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:backend_api/web/UserRestController.dart';
 import 'package:http/http.dart' as http;
 import 'web/BadgeRestController.dart';
 import 'web/ComplaintRestController.dart';
 import 'web/OfferRestController.dart';
 import 'web/TaskRestController.dart';
+import 'web/UserRestController.dart';
 
 class HttpRoutingSimulator {
   static final String BASE_URL = "http://localhost";
@@ -16,11 +16,29 @@ class HttpRoutingSimulator {
   static final TaskRestController _taskRestController = TaskRestController();
   static final BadgeRestController _badgeRestController = BadgeRestController();
 
+  /// send HTTP GET request
+  ///
+  /// first parameter [a] URI is required, when using this method send URL like this Uri.parse(HttpRoutingSimulator.BASE_URL + #endpoint)
+  ///
+  /// HttpRoutingSimulator.BASE_URL = http://localhost
+  ///
+  /// if you need to send request body please add to method (body: yourRequest)
+  ///
+  /// the method will return Response contain body if there and the http status
   static http.Response get(Uri uri,
       {Map<String, String>? headers, Object? body, Encoding? encoding}) {
     return _call(uri, body: body, method: "GET");
   }
 
+  /// send HTTP POST request
+  ///
+  /// first parameter [a] URI is required, when using this method send URL like this Uri.parse(HttpRoutingSimulator.BASE_URL + #endpoint)
+  ///
+  /// HttpRoutingSimulator.BASE_URL = http://localhost
+  ///
+  /// if you need to send request body please add to method (body: yourRequest)
+  ///
+  /// the method will return Response contain body if there and the http status
   static http.Response post(Uri uri,
       {Map<String, String>? headers, Object? body, Encoding? encoding}) {
     return _call(uri, body: body, method: "POST");

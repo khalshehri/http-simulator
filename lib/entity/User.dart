@@ -1,6 +1,6 @@
 // ignore: file_names
-import 'package:backend_api/entity/Badge.dart';
-import 'package:backend_api/entity/BaseEntity.dart';
+import 'Badge.dart';
+import 'BaseEntity.dart';
 
 import 'Task.dart';
 
@@ -37,7 +37,7 @@ class User extends BaseEntity {
   set setPoints(int points) => _points = points;
 
   factory User.fromJson(Map<String, dynamic> json) {
-    return User(json['id'], json['idNumber'], json['password'],
+    return User(json['id'] ?? 0, json['idNumber'], json['password'],
         json['fullName'], json['dateOfBirth'], json['email'], json['mobile']);
   }
 

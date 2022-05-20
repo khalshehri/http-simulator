@@ -1,7 +1,7 @@
-import 'package:backend_api/entity/Complaint.dart';
-import 'package:backend_api/repository/ComplaintRepository.dart';
-import 'package:backend_api/utils/SequenceUtil.dart';
+import '../entity/Complaint.dart';
+import '../repository/ComplaintRepository.dart';
 import '../repository/RepositoryFacroty.dart';
+import '../utils/SequenceUtil.dart';
 
 class ComplaintService {
   final ComplaintRepository? _complaintRepository =

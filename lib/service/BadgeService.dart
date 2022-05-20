@@ -1,8 +1,7 @@
-import 'package:backend_api/entity/Badge.dart';
-import 'package:backend_api/repository/BadgeRepository.dart';
-import 'package:backend_api/utils/SequenceUtil.dart';
-
+import '../entity/Badge.dart';
+import '../repository/BadgeRepository.dart';
 import '../repository/RepositoryFacroty.dart';
+import '../utils/SequenceUtil.dart';
 
 class BadgeService {
   final BadgeRepository? _badgeRepository =

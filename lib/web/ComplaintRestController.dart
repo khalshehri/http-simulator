@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:backend_api/entity/Complaint.dart';
-import 'package:backend_api/service/ComplaintService.dart';
 import 'package:http/http.dart' as http;
-import 'package:backend_api/service/ServiceFactory.dart';
+import '../entity/Complaint.dart';
+import '../service/ComplaintService.dart';
+import '../service/ServiceFactory.dart';
 
 class ComplaintRestController {
   final ComplaintService? _complaintService =

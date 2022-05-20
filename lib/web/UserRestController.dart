@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:backend_api/service/ServiceFactory.dart';
-import 'package:backend_api/service/UserService.dart';
-
 import '../entity/User.dart';
+import '../service/ServiceFactory.dart';
+import '../service/UserService.dart';
 
 class UserRestController {
   final UserService? _userService = ServiceFactory.getUserService;

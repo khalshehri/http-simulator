@@ -1,8 +1,8 @@
-import 'package:backend_api/repository/BadgeRepository.dart';
-import 'package:backend_api/repository/ComplaintRepository.dart';
-import 'package:backend_api/repository/OfferRepository.dart';
-import 'package:backend_api/repository/TaskRepository.dart';
-import 'package:backend_api/repository/UserRepository.dart';
+import 'BadgeRepository.dart';
+import 'ComplaintRepository.dart';
+import 'OfferRepository.dart';
+import 'TaskRepository.dart';
+import 'UserRepository.dart';
 
 class RepositoryFactory {
   static UserRepository? _userRepository;

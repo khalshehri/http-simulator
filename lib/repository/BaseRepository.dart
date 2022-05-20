@@ -1,4 +1,4 @@
-import 'package:backend_api/entity/BaseEntity.dart';
+import '../entity/BaseEntity.dart';
 
 abstract class BaseRepository {
   List<BaseEntity> _entities = new List.empty(growable: true);

@@ -1,4 +1,4 @@
-import 'package:backend_api/entity/BaseEntity.dart';
+import 'BaseEntity.dart';
 
 class Offer extends BaseEntity {
   String? _category;
@@ -19,8 +19,8 @@ class Offer extends BaseEntity {
   set setCode(String code) => _code = code;
 
   factory Offer.fromJson(Map<String, dynamic> json) {
-    return Offer(
-        0, json['category'], json['title'], json['description'], json['code']);
+    return Offer(json['id'] ?? 0, json['category'], json['title'],
+        json['description'], json['code']);
   }
 
   Map toJson() => {

@@ -19,8 +19,8 @@ class Badge extends BaseEntity {
   set setDescription(String description) => _description = description;
 
   factory Badge.fromJson(Map<String, dynamic> json) {
-    return Badge(
-        0, json['name'], json['points'], json['type'], json['description']);
+    return Badge(json['id'] ?? 0, json['name'], json['points'], json['type'],
+        json['description']);
   }
 
   Map toJson() => {

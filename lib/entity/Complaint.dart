@@ -31,7 +31,7 @@ class Complaint extends BaseEntity {
 
   factory Complaint.fromJson(Map<String, dynamic> json) {
     return Complaint(
-        0,
+        json['id'] ?? 0,
         json['category'],
         json['title'],
         json['details'],

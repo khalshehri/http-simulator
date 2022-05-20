@@ -1,4 +1,4 @@
-import 'package:backend_api/entity/BaseEntity.dart';
+import 'BaseEntity.dart';
 
 class Task extends BaseEntity {
   String? _name;
@@ -19,8 +19,8 @@ class Task extends BaseEntity {
   set setDescription(String description) => _description = description;
 
   factory Task.fromJson(Map<String, dynamic> json) {
-    return Task(
-        0, json['name'], json['points'], json['type'], json['description']);
+    return Task(json['id'] ?? 0, json['name'], json['points'], json['type'],
+        json['description']);
   }
 
   Map toJson() => {
