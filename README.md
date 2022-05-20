@@ -26,7 +26,7 @@ flutter pub add http_simulator
 This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
 ```sh
 dependencies:
-  http_simulator: ^1.0.0
+  http_simulator: ^1.0.1
 ```
 
 ## DESCRIPTION

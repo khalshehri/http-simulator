@@ -1,6 +1,6 @@
 name: http_simulator
 description: it's small library for development purpose, it will act as backend API
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/khalshehri/http-simulator
 
 environment:
